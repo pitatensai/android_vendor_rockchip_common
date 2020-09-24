@@ -37,3 +37,13 @@ LOCAL_SRC_FILES := $(TARGET_ARCH)/$(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
 #endif
+
+###############################################################################
+# parted
+include $(CLEAR_VARS)
+LOCAL_MODULE := parted
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := EXECUTABLES
+LOCAL_MODULE_STEM := $(LOCAL_MODULE)
+LOCAL_SRC_FILES := $(TARGET_ARCH)/$(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
