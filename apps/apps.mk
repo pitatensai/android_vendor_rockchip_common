@@ -1,5 +1,5 @@
 
-
+ifeq ($(BUILD_RK_APPS),true)
 PRODUCT_PACKAGES += \
     RKUpdateService
 
@@ -107,4 +107,5 @@ PRODUCT_PACKAGES += \
 #        PRODUCT_PACKAGES += \
 #              SimpleLauncher
   endif
+endif
 endif
